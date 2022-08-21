@@ -1,0 +1,211 @@
+body {
+    width: 100%;
+    height: auto;
+    margin: 0 auto;
+    background-color: bisque;
+}
+
+header{
+    font-family: 'Roboto', sans-serif;
+}
+
+.site-info {
+    width: 100%;
+    height: 70px;
+    background-color: aqua;
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    align-items: center;
+}
+
+.phone-number, .text-bascket {
+    font-size: large;
+    font-weight: 600;
+    margin-left: 15px;
+   
+}
+
+.phone-icon{
+   margin-left: 15px;
+}
+
+.site-logo{
+    font-size: 30px;
+    font-weight: 600;
+    margin: 5px;
+}
+
+.phone-number-inf, .bascket{
+    display: flex;
+    align-items: center;
+}
+
+.bascket{
+    margin-right: 25px;
+}
+
+.menu {
+    width: 100%;
+    height: 40px;
+    background-color: rgb(129, 134, 134);
+    display: flex;
+    justify-content: center;
+    position: relative;
+    align-items: center; 
+}
+
+.electronics, .clothes, .cosmetics, .home {
+    font-size: medium;
+    display: flex;
+    justify-content: center;
+    margin-left: 15px;
+    margin-right: 15px;
+    font-weight: 550;
+    font-size: 20px;
+}
+
+.catalog-button {
+    width: 200px;
+    height: 40px;
+    background-color: #46dff0;
+    font-size: 20px;
+    font-weight: 600;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-left: 42%;
+
+}
+
+.product-items{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-gap: 5px;
+    justify-items: center;
+    box-sizing: border-box;
+    
+    padding-left: 20px;
+    padding-right: 20px;
+    
+}
+
+
+.product-card{
+    margin: 10px 5px;
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-items: center;
+    grid-gap: 5px;
+  
+}
+
+.product-img{
+    width: 230px;
+    height: auto;
+    
+}
+
+.product-name{
+    font-size: 20px;
+    font-weight: 500;
+    align-items: center;
+
+}
+
+.price{
+    font-size: 20px;
+    font-weight: 400;
+   
+}
+
+.buy-button {
+    width: 120px;
+    height: 30px;
+    background-color: rgb(5, 199, 124);
+    font-size: 15px;
+    font-weight: 300;
+    font-family: 'Roboto', sans-serif;
+}
+
+p{
+    margin: 0;
+}
+
+  
+.preloader{
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    display: none;
+   
+}
+   
+.preloader_loader {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+ 
+   
+@keyframes ldio-je78vjxyahp {
+    0% {
+        top: 96px;
+        left: 96px;
+        width: 0;
+        height: 0;
+        opacity: 1;
+      }
+    100% {
+        top: 18px;
+        left: 18px;
+        width: 156px;
+        height: 156px;
+        opacity: 0;
+      }
+}
+
+.ldio-je78vjxyahp div {
+    position: absolute;
+    border-width: 6px;
+    border-style: solid;
+    opacity: 1;
+    border-radius: 50%;
+    animation: ldio-je78vjxyahp 1s cubic-bezier(0,0.2,0.8,1) infinite;
+}
+
+.ldio-je78vjxyahp div:nth-child(1) {
+    border-color: #e90c59;
+    animation-delay: 0s;
+}
+
+.ldio-je78vjxyahp div:nth-child(2) {
+    border-color: #46dff0;
+    animation-delay: -0.5s;
+}
+    
+.loadingio-spinner-ripple-o4hy1tw3hj {
+    width: 200px;
+    height: 200px;
+    display: inline-block;
+    overflow: hidden;
+    
+}
+    
+.ldio-je78vjxyahp {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    transform: translateZ(0) scale(1);
+    backface-visibility: hidden;
+    transform-origin: 0 0; 
+}
+    
+.ldio-je78vjxyahp div { 
+    box-sizing: content-box; 
+}
+ 
+   
