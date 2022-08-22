@@ -15,22 +15,23 @@ buttonItems.addEventListener('click', async () => {
     buttonItems.remove();
 });
 
+
 async function productItems() {
 
 let {data}  = await axios.get('/items');
 
-
 let htmlProdacts = '';
 
-data.items.forEach((item) => {
+data.items.forEach((item, index) => {
+
     htmlProdacts += `
         <div class="product-card">
-            <a href="#">
+            <a id ="${index}" href="/items/${index}">
                 <img class="product-img" src= "${item.img}" > 
                     <div class="product-name">${item.name}</div>
             </a>
             <div class="price">${item.price} грн</div>
-                <a href="#">
+                <a id ="${index}" href="/items/${index}">
                     <form>
                         <button class="buy-button">
                             <p>Купити</p>
@@ -51,7 +52,7 @@ loadItems.addEventListener('click', (event) => {
         console.log(itemId);
 
     async function sendId(id) {
-        await axios.get(`/products/${id}`);
+        await axios.get(`/product-id/${id}`);
     };
     sendId(itemId);
 });

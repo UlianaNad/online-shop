@@ -33,9 +33,9 @@ server.get('/items', async (req, res) => {
 server.get('/products/:id',  (req,res) => {
    let {id} = req.params;
 
-   let item = itemsList[id];
+   let productId = itemsList[id];
    
-   res.render('product-id', {item});
+   res.render('product-id', {productId});
 });
 
 
