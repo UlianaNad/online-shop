@@ -29,11 +29,15 @@ server.get('/items', async (req, res) => {
 });
 
 
-server.get('/items/:id',  (req,res) => {
-   console.log(req.params);
+
+server.get('/products/:id',  (req,res) => {
+   let {id} = req.params;
+
+   let item = itemsList[id];
    
-   res.send('product-id');
+   res.render('product-id', {item});
 });
+
 
 
 server.listen(3000);

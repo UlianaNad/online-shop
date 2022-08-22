@@ -24,26 +24,37 @@ let htmlProdacts = '';
 
 data.items.forEach((item) => {
     htmlProdacts += `
-       
-                <div class="product-card">
-                    <a href="#">
-                        <img class="product-img" src= "${item.img}" > 
-                        <div class="product-name">${item.name}</div>
-                    </a>
-                    <div class="price">${item.price} грн</div>
-                    <a href="#">
-                        <form>
-                            <button class="buy-button">
-                                <p>Купити</p>
-                            </button>   
-                        </form>
-                    </a>
-                </div>
-        
+        <div class="product-card">
+            <a href="#">
+                <img class="product-img" src= "${item.img}" > 
+                    <div class="product-name">${item.name}</div>
+            </a>
+            <div class="price">${item.price} грн</div>
+                <a href="#">
+                    <form>
+                        <button class="buy-button">
+                            <p>Купити</p>
+                        </button>   
+                    </form>
+                </a>
+            </div>
         `;       
 });
 
 loadItems.innerHTML = htmlProdacts;
 
 };
+
+
+loadItems.addEventListener('click', (event) => {
+    let itemId = +event.target.id;
+        console.log(itemId);
+
+    async function sendId(id) {
+        await axios.get(`/products/${id}`);
+    };
+    sendId(itemId);
+});
+
+
 
