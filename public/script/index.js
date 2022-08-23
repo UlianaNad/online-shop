@@ -26,12 +26,12 @@ data.items.forEach((item, index) => {
 
     htmlProdacts += `
         <div class="product-card">
-            <a id ="${index}" href="/items/${index}">
+            <a id ="${index}" href="/products/${index}">
                 <img class="product-img" src= "${item.img}" > 
                     <div class="product-name">${item.name}</div>
             </a>
             <div class="price">${item.price} грн</div>
-                <a id ="${index}" href="/items/${index}">
+                <a id ="${index}" href="/products/${index}">
                     <form>
                         <button class="buy-button">
                             <p>Купити</p>
@@ -52,7 +52,7 @@ loadItems.addEventListener('click', (event) => {
         console.log(itemId);
 
     async function sendId(id) {
-        await axios.get(`/product-id/${id}`);
+        await axios.get(`/products/${id}`);
     };
     sendId(itemId);
 });
